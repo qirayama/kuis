@@ -1,0 +1,66 @@
+body{
+  display: flex;
+  justify-content: left;
+  background-color: white;
+}
+
+  .container{
+    background-color: #ffffff;
+    border: 10px none black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 80px;
+    box-shadow: 7px 2px 13px 4px rgba(97,91,91,0.32);
+-webkit-box-shadow: 7px 2px 13px 4px rgba(97,91,91,0.32);
+-moz-box-shadow: 7px 2px 13px 4px rgba(97,91,91,0.32);
+  }
+
+  .container__top{
+    position: static;
+  }
+  
+  .container__article-list{
+    position: relative;
+    width: 269px;
+    height: 260px;
+    top: 60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,1.2);
+    border: 10px solid black;
+    display: grid;
+  }
+
+  .article{
+    max-width: 100%;
+    border-radius: px;
+    border-bottom: 3px solid rgb(180, 177, 177);
+    
+  }
+
+  .container__bottom {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 20px;
+  }
+
+  .container__bottom button{
+    background-color: #A149FA;
+    color: white;
+    button padding: 10px 20px;
+    border: 10px solid #A149FA;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  @media only screen and (max-width : 480px ){
+    .box{
+        width: 70%;
+    }
+}
