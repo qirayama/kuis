@@ -23,3 +23,92 @@ p{
 .my-float {
     margin-top: 16px;
 }
+
+p{
+    color: burlywood;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    border: 20px dotted blueviolet;
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+}
+
+h1{
+    color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50%;
+}
+h2 {
+    display: block;
+    border: 5px solid violet;
+}
+h3 {
+    display: inline;
+    border: 5px solid violet;
+}
+#first-box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    left: 50px;
+}
+#second-box{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+#third-box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: fixed;
+    left: 50px;
+    top: 100px;
+}
+#fourth-box{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    left: 100px;
+}
+    a:link, a:visited {
+    background-color: brown;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none; /*menghilangkan garis bawah hyperlink*/
+    display: inline-block; 
+    border-radius: 5px;
+    margin: 3px;
+  }
+  
+    a:hover, a:active {
+    background-color: red;
+  }
+
+/*
+  a:link {
+    color: rgb(255, 0, 234);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(0, 255, 21);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
