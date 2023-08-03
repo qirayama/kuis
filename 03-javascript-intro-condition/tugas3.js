@@ -1,25 +1,25 @@
-//1
+//1 standar
 let namaLengkap='Ariq Monetra';
 console.log(namaLengkap);
-//2
+//2 concat
 let word = 'JavaScript'
 let second = ' is'
 let third = ' awesome'
 
 let outputGabunganVariable=word.concat(second).concat(third);
 console.log(outputGabunganVariable);
-//3
+//3 template literals
 let hello = 'Hello '; 
 let world = 'World!!'; 
 
 let output = `${hello} ${world}`
 console.log(output)
-//4
+//4 rubah string menjadi int menggunakan parseInt
 let panjangPersegiPanjang = "8";
 let lebarPersegiPanjang = "5";
 let kelilingPersegiPanjang = 2 * (parseInt(panjangPersegiPanjang) + parseInt(lebarPersegiPanjang))
 console.log (kelilingPersegiPanjang);
-//5
+//5 menggunakan sentences.substring agar bisa memilih huruf dari a ke b
 let sentences= 'wah javascript itu keren sekali'; 
 
 let firstWords= sentences.substring(0, 3); 
@@ -28,12 +28,12 @@ let thirdWords= sentences.substring(15, 18);
 let fourthWords= sentences.substring(19, 24);
 let fifthWords= sentences.substring(25); 
 
-console.log('Kata Pertama: ' + firstWords); 
-console.log('Kata Kedua: ' + secondWords); 
+console.log('Kata Pertama: ' + firstWords); // string kata pertama + hasil string firstword.
+console.log('Kata Kedua: ' + secondWords); // Kata Kedua: Javascript
 console.log('Kata Ketiga: ' + thirdWords); 
 console.log('Kata Keempat: ' + fourthWords); 
 console.log('Kata Kelima: ' + fifthWords);
-//6
+//6 pemilih kata per-kata menggunakan sentence +
 var sentence = "I am going to be React JS Developer"; 
 
 var exampleFirstWord = sentence[0] ; 
@@ -53,12 +53,12 @@ console.log('Fifth Word: ' + fifthWord);
 console.log('Sixth Word: ' + sixthWord); 
 console.log('Seventh Word: ' + seventhWord); 
 console.log('Eighth Word: ' + eighthWord);
-//7
+//7 penggunaan 'slice', variable.slice(a,b)
 let txt = "I can eat bananas all day";
-let hasil= txt.slice(10,17); //lakukan pengambilan kalimat di variable ini
+let hasil= txt.slice(10,17); //bananas
 
 console.log(hasil)
-//8
+//8 penggunaan if else
 var nilaiDoe = 50;
     if (nilaiDoe >= 80){
         console.log('A');
@@ -68,18 +68,17 @@ var nilaiDoe = 50;
         console.log('C');
     } else if (nilaiDoe >=50 && nilaiDoe<60) {
         console.log('D');
-    } else if (nilaiDoe < 50){
+    } else { //else katanya menjaga struktur pengkondisian
         console.log('E');
     }
-//9
+//9 fungsi ternary
 let angka = 2
 let ternary = angka === 2 ? "angka nya 2" : "bukan angka 2"
  console.log(ternary);
-//10
+//10 fungsi switch case dengan string
 var traffic_lights = 'red';
 switch(traffic_lights){
     case 'red':{console.log('berhenti'); break;}
     case 'yellow':{console.log('hati-hati'); break;}
     case 'green':{console.log('berjalan'); break;}
 }
-
