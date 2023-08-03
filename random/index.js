@@ -1,64 +1,68 @@
+//basic hello world js
 var sayhello = "hello world!"
 console.log(sayhello)
 
-var name = "john" // tipe
-var angka = 12
-var todayIsFriday = false
+var name = "john" // tipe string
+var angka = 12 // tipe int,real,dst
+var todayIsFriday = false //boolean
 
 console.log(name) // john
 console.log(angka); // 12
 console.log(todayIsFriday); // false
 
+//var dan let
 var BeforeES6 = "BeforeES6"
 console.log(BeforeES6);
 var x = 1;
-if (x === 1){
-    var x = 2;
+if (x === 1){           
+    var x = 2;              // var disini
 
     console.log(x); //2
 }
-console.log(x); //2
+console.log(x); //2, var bisa diakses diluar blok if
 
 var AfterES6 = "AfterES6"
 console.log(AfterES6);
 let x = 1;
 if (x ===1){
-    let x = 2;
-    console.log(x); //2
+    let x = 2; // variable let hanya block scope        
+    console.log(x); //2,
 }
-console.log(x); //1
+console.log(x); //1, jadi hasil dari blok if tidak bisa diakses disini
 
-let sentences = "Javascript"
+//senteces, pemilihan kata menggunakan angka, urutan mulai dari 0
+let sentences = "Javascript" 
 console.log(sentences[0]); // J karena js selalu dihting dari 0
 console.log(sentences[8]); // t karena urutan ke 8 mulai dari 0
- 
+//
 let word = "Javascript is Awesome"
 let word2 = " 2"
-console.log(word.length); //21
-console.log('i am a string'.charAt(0)); //i
-console.log(word.concat(word2)); // JiA 2
-console.log(word.indexOf("Java")); 
+console.log(word.length); //21, untuk menghitung jumlah huruf, termasuk spasi
+console.log('i am a string'.charAt(0)); //i, untuk memilih huruf menggunakan angka
+console.log(word.concat(word2)); // JiA 2, untuk menggabungan 2
+console.log(word.indexOf("Java")); // 0, menemukan huruf pertama yang ditemukan yaitu J pada urutan 0
 console.log(word.indexOf("s")); // 4
 console.log(word.indexOf("a")); // 1
-
+// substr, memilih huruf keberapa dan menuliskannya sampai habis
 let car1 = 'Lykan Hypersport';
-let car2 = car1.substr(0);
-console.log(car2); //Lykan
-
+let car2 = car1.substr(6);
+console.log(car2); //Hypersport
+// varibale int, real, array. Value nya disusun secara spesifik
 let int = 12;
 let real = 3.45;
 let arr = [6, 7, 8];
-let strInt = String(int);
+let strInt = String(int); // int, real, arr, dirubah tipe datanya menjadi string
 let strReal = String(real);
 let strArr = String(arr);
 console.log(strInt);
 console.log(strReal);
 console.log(strArr);
 
+// toString() mengkonversi tipe data lain menjadi string
 let number = 21;
-console.log(number.toString()); // '21'
+console.log(number.toString()); // 21 > "21", int jadi string
 let array = [1,2];
-console.log(array.toString()); // '1,2' toString() mengkonversi tipe data lain menjadi string
+console.log(array.toString()); // [1,2] > "1,2", array jadi string
 
 let number1 = Number("90");
 let number2 = Number("1.23");
