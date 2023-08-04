@@ -73,7 +73,7 @@ let buku = {
 
 let objOutput = {}
 // kode diatas ini jangan di rubah atau di hapus sama sekali
-Object.assign(objOutput, dataBukuTambahan, buku);
+objOutput.push(...dataBukuTambahan, ...buku)
 // kode di bawah ini jangan dirubah atau dihapus
 console.log(objOutput)
 // 9 
