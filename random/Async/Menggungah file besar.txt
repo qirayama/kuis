@@ -1,0 +1,43 @@
+Kasus: Mengunggah File Besar
+Bayangkan Anda sedang membuat aplikasi web yang memungkinkan pengguna mengunggah file besar, seperti video atau set gambar besar. Mengunggah file ini bisa memakan waktu cukup lama, tergantung pada ukuran file dan kecepatan internet pengguna. Menggunakan JavaScript asynchronous, Anda dapat mengelola pengunggahan ini tanpa membekukan seluruh aplikasi, memberikan umpan balik kepada pengguna mengenai proses yang sedang berlangsung.
+
+Berikut adalah contoh kode sederhana yang menggunakan XMLHttpRequest untuk mengunggah file secara asynchronous. Anda juga dapat memberikan umpan balik kepada pengguna tentang proses pengunggahan.
+
+function uploadFile(file) {
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', '/upload', true); // Ganti dengan URL endpoint pengunggahan Anda
+
+  // Tambahkan event listener untuk melacak proses
+  xhr.upload.addEventListener('progress', (event) => {
+    if (event.lengthComputable) {
+      const progress = (event.loaded / event.total) * 100;
+      console.log(`Pengunggahan: ${progress.toFixed(2)}%`);
+    }
+  });
+
+  // Tambahkan event listener untuk menangani ketika pengunggahan selesai
+  xhr.addEventListener('load', () => {
+    if (xhr.status === 200) {
+      console.log('File berhasil diunggah');
+    } else {
+      console.error('Gagal mengunggah file');
+    }
+  });
+
+  // Tangani error
+  xhr.addEventListener('error', () => {
+    console.error('Terjadi kesalahan saat mengunggah file');
+  });
+
+  // Kirim file
+  xhr.send(file);
+}
+
+// Contoh penggunaan:
+const fileInput = document.getElementById('file-input');
+fileInput.addEventListener('change', (event) => {
+  const file = event.target.files[0];
+  uploadFile(file);
+});
+
+Pada contoh ini, fungsi uploadFile mengunggah file yang diberikan ke server menggunakan XMLHttpRequest. Event listener ditambahkan untuk melacak kemajuan pengunggahan dan memberikan umpan balik ke konsol (atau Anda bisa memperbarui antarmuka pengguna). Ini memberikan pengalaman yang lebih responsif dan informatif bagi pengguna Anda, tanpa harus menunggu pengunggahan selesai untuk terus berinteraksi dengan aplikasi.
