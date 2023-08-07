@@ -75,6 +75,8 @@ h3 {
     width: 100px;
     background-color: yellow;
     left: 100px;
+    margin-left: auto;
+    background-image: ;
 }
     a:link, a:visited {
     background-color: brown;
