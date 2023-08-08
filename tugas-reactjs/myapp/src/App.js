@@ -5,9 +5,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Ariq Monetra</h1>
-      </header>
-    </div>
+        <div id="container__article-list">
+          <div class="article">
+            <h2>Hi, Saya Ariq Monetra</h2>
+          </div>
+          <p>Saya dari batch 48 berhasil menginstall react</p>
+        </div>
+      </header >
+    </div >
+
   );
 }
 
