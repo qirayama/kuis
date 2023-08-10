@@ -61,11 +61,16 @@ p{
   color: #61dafb;
 }
 
+.fontsize{
+  font-size: 30px;
+}
+
 .click {
   align-items: center;
   width: 100%;
   padding: 15px;
-  font-size: 20px;
+  font-size: 30px;
+  border-radius: 5px;
 }
 
 @keyframes App-logo-spin {

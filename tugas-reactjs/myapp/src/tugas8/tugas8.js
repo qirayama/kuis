@@ -9,12 +9,11 @@ function App2() {
     };
     return (
         <div className="App">
-
             <div id="container__article-list">
                 <div class="article2">
-                    <p>{count}</p>
+                    <p class="fontsize">{count}</p>
                     <button className="click" onClick={increment}>Tambah</button>
-                    {count > 9 && <p>State count sudah lebih dari 10!!</p>}
+                    {count > 9 && <p class="fontsize">State count sudah lebih dari 10!!</p>}
                 </div>
             </div>
 
