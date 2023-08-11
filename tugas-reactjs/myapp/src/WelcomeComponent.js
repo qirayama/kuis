@@ -5,3 +5,8 @@ function Welcome(props) {
 }
 
 export default Welcome
+
+import React from "react"
+fuction Welcome(props) {
+    return <h1>Hello, {props.name}</h1>
+}

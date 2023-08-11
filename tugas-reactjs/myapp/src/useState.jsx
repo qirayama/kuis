@@ -7,3 +7,5 @@ function Greeting({ isLoggedIn }) {
         </div>
     );
 }
+
+export default Greeting;

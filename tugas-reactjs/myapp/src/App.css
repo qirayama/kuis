@@ -1,101 +1,112 @@
 .App {
-  background-color: white;
-  border: 1px solid rgb(233, 227, 227);
-  border-radius: 20px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 30px;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 50px;
-  margin-bottom: 80px;
-  box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.26);
--webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.26);
--moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.26);
-}
-
-p{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    background-color: white;
+    border: 1px solid rgb(233, 227, 227);
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    
   }
-}
-
-.App-header {
-  background-color: white;
-  min-height: vh;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  font-size: calc(10px + 2vmin);
-  color: black;
-}
-
-.container__article-list{
-  position: relative;
-  width: 269px;
-  height: 100px;
-  top: 60px;
-  left: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,1.2);
-  border: 10px solid black;
-  display: grid;
-}
-
-.article{
-  max-width: 100%;
-  border-radius: px;
-  border-bottom: 3px solid rgb(180, 177, 177);
   
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.fontsize{
-  font-size: 30px;
-}
-
-.click {
-  align-items: center;
-  width: 100%;
-  padding: 15px;
-  font-size: 30px;
-  border-radius: 5px;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .shadow{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+   
   }
-}
 
-.Button {
-  background-color: white;
-  min-height: vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-  width: 100%;
-}
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: white;
+    min-height: vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  
+  .container__article-list{
+    position: relative;
+    width: 269px;
+    height: 100px;
+    top: 60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,1.2);
+    border: 10px solid black;
+    display: grid;
+  }
+  
+  .article{
+    max-width: 100%;
+    border-radius: px;
+    border-bottom: 3px solid rgb(180, 177, 177);
+    
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  .fontsize{
+    font-size: 20px;
+  }
+  
+  .click {
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 5px;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .Button {
+    background-color: white;
+    min-height: vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    width: 100%;
+  }
+  
+  .article2{
+    max-width: 100%;
+    border-radius: px;
+    text-align: center;
+  }
 
-.article2{
-  max-width: 100%;
-  border-radius: px;
-  text-align: center;
-}
+  .bold{
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  Button{
+    width: 100%;
+  }

@@ -6,9 +6,9 @@ function App2() {
             <header className="App-header">
                 <div id="container__article-list">
                     <div class="article">
-                        <h2>Hi, Saya Ariq Monetra</h2>
+                        <h2 className="font-serif">Hi, Saya Ariq Monetra</h2>
                     </div>
-                    <p>Saya dari batch 48 berhasil menginstall react</p>
+                    <p className="font-serif">Saya dari batch 48 berhasil menginstall react</p>
                 </div>
             </header >
         </div >
