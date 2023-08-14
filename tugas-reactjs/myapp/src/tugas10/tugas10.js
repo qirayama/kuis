@@ -3,7 +3,7 @@ import axios from "axios";
 import { Button, Table } from "flowbite-react";
 import { getGrade } from "../utils";
 
-function Tugas11() {
+function Tugas10() {
     const [data, setData] = useState([]);
     const [isError, setIsError] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
@@ -64,7 +64,7 @@ function Tugas11() {
     ) : 'Failed'
 }
 
-export default Tugas11
+export default Tugas10
 
 
 
