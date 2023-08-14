@@ -22,7 +22,3 @@ function App2() {
         </div >
     );
 }
-
-
-
-export default App2;
