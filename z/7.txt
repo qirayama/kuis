@@ -1,0 +1,3 @@
+NCSA (National Center of Supercomputing Application)
+livescript jadi javascript, alasan marketing
+ecmascript sama aja

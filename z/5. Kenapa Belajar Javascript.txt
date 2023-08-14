@@ -1,0 +1,13 @@
+untyped
+javascript itu praktis, ada di hampir semua web browser  dan tidak memerlukan konfigurasi tambahan yang menjadikannya bagus untuk di pelajari pemula.
+typed code, deklarasi variable di javascript yang mempermudah pemahaman dan efisiensi memory.
+
+'Easy to Learn' Hard to Master
+
+Javascript bisa bikin
+Client Side Web Dev : React
+Server Side Web Dev : NodeJS
+Browser Extension
+Mobile Dev : JQuery Mobile
+IOT : CyclonJS
+JSON (javascript Object Notation)

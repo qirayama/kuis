@@ -43,7 +43,7 @@ const app = () => {
         <div className='Card'>
             {gender === "laki-laki" ? <span>Pak</span> : <span>Buk</span>}
             <span> {name} </span>
-        </div>
+        </div> ""
     )
 }
 

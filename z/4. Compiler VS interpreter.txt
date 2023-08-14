@@ -1,0 +1,10 @@
+Cara kerja
+Compiler, PC A kirim ke B tanpa source code
+Interpreter, PC A kirim ke B dengan source code duplikat
+Hybrid, PC A compile IL (intermediate language/Byte Code) lalu dikirim ke B yang akan melakukan JIT(just in Time) compilation sekaligus menjalankan programnya
+
+Interpreter biasanya ditemui di web browser, untuk menerjemahkan source code agar bisa ditampilkan.
+
+Compiler, C,C++
+Interpreter, Javascript, PHP
+hybrid, java, Phyton
