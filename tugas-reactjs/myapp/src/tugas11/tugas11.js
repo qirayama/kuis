@@ -176,6 +176,7 @@ function Tugas11() {
             <div className="flex justify-center items-center">
                 <div className="w-full bg-white border border-solid border-gray-400 rounded-lg shadow p-5 my-8 mx-[200px]">
                     <div className="flex flex-col gap-3">
+                        <b>Nama :</b>
                         <input
                             type="text"
                             placeholder="Nama"
@@ -183,6 +184,7 @@ function Tugas11() {
                             onChange={(e) => setNewData({ ...newData, name: e.target.value })}
                             className="border border-gray rounded-lg p-2"
                         />
+                        <b>Mata Kuliah :</b>
                         <input
                             type="text"
                             placeholder="Mata Kuliah"
@@ -190,6 +192,7 @@ function Tugas11() {
                             onChange={(e) => setNewData({ ...newData, course: e.target.value })}
                             className="border border-gray rounded-lg p-2"
                         />
+                        <b>Nilai :</b>
                         <input
                             type="number"
                             placeholder="Nilai"

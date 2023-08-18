@@ -27,7 +27,7 @@ const App = () => {
             <Route path='/create' element={<CodeCreate />} />
             <Route path='/edit/:IdData' element={<CodeCreate />} />
             <Route path='/tugas6' element={<Tugas6 />} />
-            <Route path='/tugas7' element={<Tugas7 />} />
+            <Route path='/tugas7' element={<Tugas7 name="Ariq Monetra" batch="48" email="ariqmonetra12@gmail.com" />} />
             <Route path='/tugas8' element={<Tugas8 />} />
             <Route path='/tugas9' element={<Tugas9 />} />
             <Route path='/tugas10' element={<Tugas10 />} />
