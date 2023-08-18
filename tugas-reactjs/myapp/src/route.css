@@ -1,0 +1,19 @@
+  /* Gaya umum untuk tombol */
+  .action-button {
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+
+  /* Gaya saat tombol dihover */
+  .action-button:hover {
+    background-color: black;
+    color: white;
+  }
+
