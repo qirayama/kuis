@@ -115,12 +115,12 @@ function Tugas11() {
             <div className="px-[200px] pb-5 pt-12">
                 <Table className='shadow'>
                     <Table.Head>
-                        <Table.HeadCell className='bg-violet-500 text-white p-4'>NO</Table.HeadCell>
-                        <Table.HeadCell className='bg-violet-500 text-white p-4'>NAMA</Table.HeadCell>
-                        <Table.HeadCell className='bg-violet-500 text-white p-4'>MATA KULIAH</Table.HeadCell>
-                        <Table.HeadCell className='bg-violet-500 text-white p-4'>NILAI</Table.HeadCell>
-                        <Table.HeadCell className='bg-violet-500 text-white p-4'>INDEX NILAI </Table.HeadCell>
-                        <Table.HeadCell className='bg-violet-500 text-white p-4'>ACTION</Table.HeadCell>
+                        <Table.HeadCell className='bg-purple-800 text-white p-4'>NO</Table.HeadCell>
+                        <Table.HeadCell className='bg-purple-800 text-white p-4'>NAMA</Table.HeadCell>
+                        <Table.HeadCell className='bg-purple-800 text-white p-4'>MATA KULIAH</Table.HeadCell>
+                        <Table.HeadCell className='bg-purple-800 text-white p-4'>NILAI</Table.HeadCell>
+                        <Table.HeadCell className='bg-purple-800 text-white p-4'>INDEX NILAI </Table.HeadCell>
+                        <Table.HeadCell className='bg-purple-800 text-white p-4'>ACTION</Table.HeadCell>
                     </Table.Head>
                     <Table.Body className="divide-y">
                         {
