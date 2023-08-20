@@ -76,7 +76,7 @@ function Home() {
                     <h1 class="text-xl font-bold ">Find your data that you need!</h1>
                 </div>
 
-                <div class="container mx-auto gap-10 grid grid-cols-4">
+                <div class="container mx-auto gap-10 grid grid-cols-3">
                     {data.map((game, index) => (
                         <div class="mt-10 min-h-[200px] flex flex-1 max-w-xl bg-white shadow-lg rounded-lg overflow-hidden">
                             <img src={game.image_url} class="w-1/3 bg-cover bg-center bg-landscape" />
