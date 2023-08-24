@@ -43,7 +43,12 @@ export default function GameContextProvider({ children }) {
         setIsFetching(true);
         const { success, data, message } = await putGame(game);
         if (success) {
-            setGames( 
+            setGames((prevGames) => {
+                console.log(prevGames);
+                const newGames = [...prevGames];
+                const editedIndex = newGames.findIndex((g) => g.id === game.id);
+                newGames[editedIndex] = game;
+                return newGames;
             });
             console.log(data)
         } else {
