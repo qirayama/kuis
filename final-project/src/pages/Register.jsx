@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import { useContext, useState } from 'react'
 import { GuestLayout } from '../components'
 import { Button } from 'flowbite-react'
 import { toast } from 'react-toastify'
