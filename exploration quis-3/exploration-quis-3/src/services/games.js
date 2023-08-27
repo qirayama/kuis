@@ -27,12 +27,14 @@ export const putGame = async (game) => {
     }
 }
 
-export const deleteGame = async (id) => {
-    try {
-        const response = await axios.delete('https://backendexample.sanbercloud.com/api/mobile-apps/' + id);
-        return { success: true, data: response.data, message: '' }
-    } catch (error) {
-        return { success: false, data: [], message: error.message };
-    }
-}
+export const handleDelete = (id) => {
+    axios.delete(`https://backendexample.sanbercloud.com/api/mobile-apps/${id}`)
+        .then(() => {
+            // Remove the deleted data from the state
+            setData(data.filter(item => item.id !== id));
+        })
+        .catch((error) => {
+
+        });
+};
 

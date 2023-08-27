@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Button, Table } from "flowbite-react";
 import { formatBytes, getGrade } from "./utils.js";
 import { Link } from "react-router-dom";
 
