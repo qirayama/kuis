@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import React from 'react'
+import { Route, Routes } from "react-router-dom";
+import { Dashboard, Home, Login, Register } from './pages'
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <p>hello world</p>
-    </>
+    <Routes>
+      <Route path="/" Component={Home} />
+      <Route path="/dashboard" Component={Dashboard} />
+      <Route path="/login" Component={Login} />
+      <Route path="/register" Component={Register} />
+    </Routes>
   )
 }
-
-export default App
