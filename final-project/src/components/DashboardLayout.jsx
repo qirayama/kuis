@@ -1,10 +1,10 @@
 import { Link, useNavigate } from "react-router-dom/dist";
 import GuestLayout from "./GuestLayout";
 import { useContext } from "react";
-import { AuthContext } from "../contexts/authContext";
+import { AuthContext } from "../contexts/AuthContext";
 
-export default function DashboardLayout({children}) {
-    const {logout} = useContext(AuthContext);
+export default function DashboardLayout({ children }) {
+    const { logout } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const onLogoutHandle = () => {

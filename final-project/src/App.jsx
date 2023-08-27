@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import { AddJob, ChangePassword, Dashboard, EditJob, Home, JobDetails, List, Login, NotFound, Profile, Register } from './pages'
 import { useContext } from "react";
-import { AuthContext } from "./contexts/authContext";
+import { AuthContext } from "./contexts/AuthContext";
 import { getAuthUser } from "./utils";
 
 export default function App() {
-  const {user} = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
 
-  if(!getAuthUser()) {
+  if (!getAuthUser()) {
     return (
       <Routes>
         <Route path="/" Component={Home} />
@@ -19,7 +19,7 @@ export default function App() {
       </Routes>
     )
   }
-  
+
   return (
     <Routes>
       <Route path="/" Component={Home} />

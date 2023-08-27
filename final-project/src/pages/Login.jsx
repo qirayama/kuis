@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react'
 import { GuestLayout } from '../components'
 import { Button } from 'flowbite-react'
-import { AuthContext } from '../contexts/authContext';
+import { AuthContext } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router';
 
 export default function Login() {

@@ -1,10 +1,10 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { AuthContext } from '../contexts/authContext'
+import { AuthContext } from '../contexts/AuthContext'
 import { useNavigate } from 'react-router';
 
 export default function GuestLayout({ children }) {
-    const {user, logout} = useContext(AuthContext);
+    const { user, logout } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const onLogoutHandle = () => {

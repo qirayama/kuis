@@ -2,7 +2,7 @@ import { useContext, useState } from 'react'
 import { GuestLayout } from '../components'
 import { Button } from 'flowbite-react'
 import { toast } from 'react-toastify'
-import { AuthContext } from '../contexts/authContext'
+import { AuthContext } from '../contexts/AuthContext'
 import { useNavigate } from 'react-router-dom'
 
 export default function Register() {
