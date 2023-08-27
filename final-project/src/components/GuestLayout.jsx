@@ -28,7 +28,9 @@ export default function GuestLayout({ children }) {
                     </>)}
                 </div>
             </div>
-            {children}
+            <div className='overflow-y-auto h-full'>
+                {children}
+            </div>
         </div>
     )
 }
